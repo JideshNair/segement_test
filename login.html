@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+<html>
+<head>
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="login_style.css">
+   <link rel="manifest" href="/testclevertap/manifest.json">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
+ <script>
+  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var t=analytics.methods[e];analytics[t]=analytics.factory(t)}analytics.load=function(e,t){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+e+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=t};analytics.SNIPPET_VERSION="4.1.0";
+  analytics.load("rOyR3FsWJlYqHgca9EDnzQSM58PJZqjb");
+  analytics.page();
+  }}();
+</script>
+
+    <script type="text/javascript">
+  
+  navigator.serviceWorker.register('/testclevertap/clevertap_sw.js', { scope: '/testclevertap/' })
+        .then(function (registration)
+        {
+          console.log('Service worker registered successfully');
+        }).catch(function (e)
+        {
+          console.error('Error during service worker registration:', e);
+        });
+    
+
+    function signin(){
+     analytics.track('Article Bookmarked', {
+  title: 'Snow Fall',
+  subtitle: 'The Avalanche at Tunnel Creek',
+  author: 'John Branch'
+});
+            
+}
+
+       
+  
+</script>
+
+</head>
+
+<body class="body">
+	
+	
+
+<div class="login-page">
+  <div class="form">
+
+    <form>
+      <input type="text" placeholder="&#xf007;  username"id="username"/>
+      <input type="password" placeholder="&#xf023;  password" id="pass"/>
+      <button type="button1" onclick="signin()">Login</button>
+    </form>
+      <p class="message"></p>
+    </form>
+
+    <form class="login-form">
+      <button type="button" onclick="window.location.href='signup.html'">SIGN UP</button>
+    </form>
+  </div>
+</div>
+<div class="btn">CLOSE</div>
+
+
+</body>
+</html>
