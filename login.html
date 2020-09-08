@@ -9,41 +9,7 @@
    <link rel="manifest" href="/testclevertap/manifest.json">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
- <script>
-  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var t=analytics.methods[e];analytics[t]=analytics.factory(t)}analytics.load=function(e,t){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+e+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=t};analytics.SNIPPET_VERSION="4.1.0";
-  analytics.load("FQAPL2ATNAFlS3dQAZrl4nAsLoTqHJSU");
-  analytics.page();
-  }}();
-</script>
-
-    <script type="text/javascript">
-  
-  navigator.serviceWorker.register('/testclevertap/clevertap_sw.js', { scope: '/testclevertap/' })
-        .then(function (registration)
-        {
-          console.log('Service worker registered successfully');
-        }).catch(function (e)
-        {
-          console.error('Error during service worker registration:', e);
-        });
-    
-
-    function signin(){
-     analytics.track('Article Bookmarked', {
-  title: 'Snow Fall',
-  subtitle: 'The Avalanche at Tunnel Creek',
-  author: 'John Branch'
-});
-    analytics.identify('f4ca12429822', {
-  name: 'Michael Brown Test two',
-  email: 'mtestbrown@example.com',
-'Time to call':'8 mins',
-birthday:'$D_897330600',
-'bingo_time_to_call_test_date':'$D_897330600',
- 'bingo_time_to_call':'$D_897330600'
-});        
-}
-<link href="https://d1vqfl8cu8qgdj.cloudfront.net/assets/css/common/livemasternew.css?v=1.1" rel="stylesheet" />
+	<link href="https://d1vqfl8cu8qgdj.cloudfront.net/assets/css/common/livemasternew.css?v=1.1" rel="stylesheet" />
 <style type="text/css">.g_modal .modal-body {
         background: #488f3e;
         display: inline-block;
@@ -90,31 +56,8 @@ birthday:'$D_897330600',
     .border-danger {
         border: solid 1px red;
     }
-
-    body {
-        background: none !important;
-    }
-</style>
-<div class="modal fade in g_modal" id="clevertap" role="dialog" style="display:block">
-<div class="modal-dialog">
-<div class="modal-content">
-<div class="modal-body"><button class="close" data-dismiss="modal" onclick="ClosePoPup();" type="button">&times;</button>
-<div id="subscribeDone">
-<h4>Are you Looking for a Great Deal?</h4>
-
-<p>Enter Your name and email and we will send you an email with Exclusive Deal.</p>
-
-<div class="form-group"><label for="email">Your Name</label> <input class="form-control" id="lblName" placeholder="Your Name" type="email" /></div>
-
-<div class="form-group"><label for="email">Your Email</label> <input class="form-control" id="input-email" placeholder="Your Email" type="email" /></div>
-<button class="btn btn-default" id="btnClevertap" type="button">Send Me</button></div>
-
-<p class="hide" id="subscribeMsg">Thanks for subscribing offers, we will find best deal & alert you</p>
-</div>
-</div>
-</div>
-</div>
-<script type="text/javascript">
+	</style>
+	<script type="text/javascript">
 
     var overlay = window.parent.document.getElementById("intentOpacityDiv");
     var wrapper = window.parent.document.getElementById("intentPreview");
@@ -171,6 +114,41 @@ birthday:'$D_897330600',
     }
     window.addEventListener('keydown', function (e) { if (e.keyIdentifier == 'U+000A' || e.keyIdentifier == 'Enter' || e.keyCode == 13) { if (e.target.nodeName == 'INPUT' && e.target.type == 'text') { e.preventDefault(); return false; } } }, true);
 </script>
+ <script>
+  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var t=analytics.methods[e];analytics[t]=analytics.factory(t)}analytics.load=function(e,t){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+e+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=t};analytics.SNIPPET_VERSION="4.1.0";
+  analytics.load("FQAPL2ATNAFlS3dQAZrl4nAsLoTqHJSU");
+  analytics.page();
+  }}();
+</script>
+
+    <script type="text/javascript">
+  
+  navigator.serviceWorker.register('/testclevertap/clevertap_sw.js', { scope: '/testclevertap/' })
+        .then(function (registration)
+        {
+          console.log('Service worker registered successfully');
+        }).catch(function (e)
+        {
+          console.error('Error during service worker registration:', e);
+        });
+    
+
+    function signin(){
+     analytics.track('Article Bookmarked', {
+  title: 'Snow Fall',
+  subtitle: 'The Avalanche at Tunnel Creek',
+  author: 'John Branch'
+});
+    analytics.identify('f4ca12429822', {
+  name: 'Michael Brown Test two',
+  email: 'mtestbrown@example.com',
+'Time to call':'8 mins',
+birthday:'$D_897330600',
+'bingo_time_to_call_test_date':'$D_897330600',
+ 'bingo_time_to_call':'$D_897330600'
+});        
+}
+
        
   
 </script>
@@ -179,7 +157,25 @@ birthday:'$D_897330600',
 
 <body class="body">
 	
-	
+<div class="modal fade in g_modal" id="clevertap" role="dialog" style="display:block">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-body"><button class="close" data-dismiss="modal" onclick="ClosePoPup();" type="button">&times;</button>
+<div id="subscribeDone">
+<h4>Are you Looking for a Great Deal?</h4>
+
+<p>Enter Your name and email and we will send you an email with Exclusive Deal.</p>
+
+<div class="form-group"><label for="email">Your Name</label> <input class="form-control" id="lblName" placeholder="Your Name" type="email" /></div>
+
+<div class="form-group"><label for="email">Your Email</label> <input class="form-control" id="input-email" placeholder="Your Email" type="email" /></div>
+<button class="btn btn-default" id="btnClevertap" type="button">Send Me</button></div>
+
+<p class="hide" id="subscribeMsg">Thanks for subscribing offers, we will find best deal & alert you</p>
+</div>
+</div>
+</div>
+</div>	
 
 <div class="login-page">
   <div class="form">
