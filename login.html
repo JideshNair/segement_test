@@ -9,124 +9,6 @@
    <link rel="manifest" href="/testclevertap/manifest.json">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
-	<link href="https://d1vqfl8cu8qgdj.cloudfront.net/assets/css/common/livemasternew.css?v=1.1" rel="stylesheet" />
-<style type="text/css">.g_modal .modal-body {
-        background: #488f3e;
-        display: inline-block;
-    }
-
-    .g_modal p, h4, button {
-        color: #fff;
-    }
-
-    .g_modal h4 {
-        font-size: 22px;
-    }
-
-    .g_modal .modal-content {
-        width: 320px;
-        margin: 0 auto;
-    }
-
-    .g_modal .close {
-        opacity: 1;
-        margin-top: -10px;
-        color: #fff;
-        font-weight: normal;
-        margin-right: -37px;
-        border: none;
-    }
-
-    .g_modal .form-group label {
-        color: #fff;
-        font-size: 13px;
-        text-transform: capitalize;
-    }
-
-    .g_modal button {
-        width: 85px;
-        border-radius: 10px;
-        padding: 6px 10px 10px 10px;
-        text-align: center;
-        color: #fff;
-        background: none !important;
-        float: right;
-    }
-
-    .border-danger {
-        border: solid 1px red;
-    }
-	</style>
-	<script type="text/javascript">
-
-    var overlay = window.parent.document.getElementById("intentOpacityDiv");
-    var wrapper = window.parent.document.getElementById("intentPreview");
-    document.getElementById("btnClevertap").addEventListener("click", sendClevertap);
-    function ClosePoPup() {
-        document.getElementById("clevertap").style.display = "none";
-
-        { overlay.remove(); wrapper.remove(); }
-    }
-    function validateEmail(email) {
-        var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        return re.test(String(email).toLowerCase());
-    }
-   
-    function sendClevertap(e) {
-
-        var email = document.getElementById('input-email').value;
-        if (document.getElementById('lblName').value=="") {
-            var element = document.getElementById("lblName");
-            element.classList.add("border-danger");
-            return;
-        }
-        if (validateEmail(email)) {
-            
-
-          window.parent.clevertap.onUserLogin.push({
-                                                   "Site": {
-                                                   "Name": document.getElementById('lblName').value,            // String
-                                                   "Email":email,         
-                                                   "MSG-email": true,                // Disable email notifications
-  
-                                                            }
-                                                   });
-            window.parent.clevertap.event.push("Form submitted", {
-                                                                  "Name": document.getElementById('lblName').value,           
-                                                                  "Email":email,  
-                                                });
-           
-            var element = document.getElementById("subscribeDone");
-            element.classList.add("hide");
-            var element1 = document.getElementById("subscribeMsg");
-            element1.classList.remove("hide");
-
-            setTimeout(function () {
-                ClosePoPup();
-            }, 3000);
-
-        }
-        else {
-            var element = document.getElementById("input-email");
-            element.classList.add("border-danger");
-
-        }
-    }
-    window.addEventListener('keydown', function (e) { if (e.keyIdentifier == 'U+000A' || e.keyIdentifier == 'Enter' || e.keyCode == 13) { if (e.target.nodeName == 'INPUT' && e.target.type == 'text') { e.preventDefault(); return false; } } }, true);
-</script>
-	 <script type="text/javascript">
-    var clevertap = {event:[], profile:[], account:[]};
-    clevertap.account.push({"id": "R74-547-885Z"});
-    clevertap.enablePersonalization = true; // enables Personalization
-    (function () {
-           var wzrk = document.createElement('script');
-           wzrk.type = 'text/javascript';
-           wzrk.async = true;
-       	   wzrk.src = ('https:' == document.location.protocol ? 'https://d2r1yp2w7bby2u.cloudfront.net' : 'http://static.clevertap.com') + '/js/a.js';
-	         var s = document.getElementsByTagName('script')[0];
-           s.parentNode.insertBefore(wzrk, s);
-       })();
-    </script>
  <script>
   !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var t=analytics.methods[e];analytics[t]=analytics.factory(t)}analytics.load=function(e,t){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+e+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=t};analytics.SNIPPET_VERSION="4.1.0";
   analytics.load("FQAPL2ATNAFlS3dQAZrl4nAsLoTqHJSU");
@@ -152,9 +34,9 @@
   subtitle: 'The Avalanche at Tunnel Creek',
   author: 'John Branch'
 });
-    analytics.identify('f4ca12429822dtdttt', {
-  name: 'Michael Brown Jumbo',
-  email: 'mtestbrown344@example.com',
+    analytics.identify('f4ca12429822', {
+  name: 'Michael Brown Test two',
+  email: 'mtestbrown@example.com',
 'Time to call':'8 mins',
 birthday:'$D_897330600',
 'bingo_time_to_call_test_date':'$D_897330600',
@@ -170,25 +52,7 @@ birthday:'$D_897330600',
 
 <body class="body">
 	
-<div class="modal fade in g_modal" id="clevertap" role="dialog" style="display:block">
-<div class="modal-dialog">
-<div class="modal-content">
-<div class="modal-body"><button class="close" data-dismiss="modal" onclick="ClosePoPup();" type="button">&times;</button>
-<div id="subscribeDone">
-<h4>Are you Looking for a Great Deal?</h4>
-
-<p>Enter Your name and email and we will send you an email with Exclusive Deal.</p>
-
-<div class="form-group"><label for="email">Your Name</label> <input class="form-control" id="lblName" placeholder="Your Name" type="email" /></div>
-
-<div class="form-group"><label for="email">Your Email</label> <input class="form-control" id="input-email" placeholder="Your Email" type="email" /></div>
-<button class="btn btn-default" id="btnClevertap" type="button">Send Me</button></div>
-
-<p class="hide" id="subscribeMsg">Thanks for subscribing offers, we will find best deal & alert you</p>
-</div>
-</div>
-</div>
-</div>	
+	
 
 <div class="login-page">
   <div class="form">
